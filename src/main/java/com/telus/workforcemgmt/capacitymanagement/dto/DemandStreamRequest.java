@@ -10,7 +10,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
+@Builder(toBuilder=true)
 @NoArgsConstructor
 @AllArgsConstructor
 public class DemandStreamRequest {
@@ -24,8 +24,8 @@ public class DemandStreamRequest {
 	private String technologyCd;
 	private String workOrderCategoryCd;
 	
-	private Boolean outOfServiceInd = false;
-	private Boolean slaInd = false;
+	private Boolean outOfServiceInd;
+	private Boolean slaInd;
 	private String specialProjectName;
 	private String severityCd;
 	private String installTypeCd;

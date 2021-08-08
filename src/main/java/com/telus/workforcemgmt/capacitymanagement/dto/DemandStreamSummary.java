@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 public class DemandStreamSummary extends RepresentationModel<DemandStreamSummary>{
 
+	private String workSpecificationId;
 	private long demandStreamId;
 	private String demandStreamNm;
 	private int rankNum;
@@ -45,6 +46,6 @@ public class DemandStreamSummary extends RepresentationModel<DemandStreamSummary
 	private LocalDate effectiveDate;
 	
 	
-	
-	
+
+
 }
