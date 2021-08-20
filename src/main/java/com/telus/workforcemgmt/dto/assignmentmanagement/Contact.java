@@ -1,7 +1,5 @@
 package com.telus.workforcemgmt.dto.assignmentmanagement;
 
-import java.io.Serializable;
-
 import lombok.Data;
 
 

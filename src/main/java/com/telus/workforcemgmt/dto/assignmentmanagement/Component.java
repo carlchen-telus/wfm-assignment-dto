@@ -1,9 +1,11 @@
 
 package com.telus.workforcemgmt.dto.assignmentmanagement;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
+@Builder(toBuilder = true) 
 public class Component {
 
     private String componentId;
@@ -21,19 +23,22 @@ public class Component {
     private String workOrderActionCd;
     private String productTechnologyCd;
     private String installationTypeCd;
-    private Float estimatedDurationNum;
+    private Double estimatedDurationNum;
     private String estimatedDurationUnitCd;
-    private ComponentLocation componentLocation;
-    private TypeCode[] componentAttributeList;
-    private TypeCode[] componentDetailList;
-    private TypeCode[] remarkList;
+    private String unitTypeCd;
+    private String unitName;
+    private String floorTypeCd;
+    private String floorName;
+    private String buildingTypeCd;
+    private String buildingName;
     private String customerName;
     private String customerContactName;
     private String customerContactPhoneNumber;
     private String statusCd;
     private Boolean isDoableInd;
     private Integer componentNumber;
-    private TeamWorkerSkill[] requiredSkills;
-    
-
+    private TeamWorkerSkill[] componentRequiredSkillList;
+    private TypeCode[] componentAttributeList;
+    private TypeCode[] componentDetailList;
+    private TypeCode[] componentRemarkList;
 }

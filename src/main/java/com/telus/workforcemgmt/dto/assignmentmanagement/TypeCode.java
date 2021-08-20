@@ -8,13 +8,18 @@
 
 package com.telus.workforcemgmt.dto.assignmentmanagement;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NonNull;
 
 @Data
+@Builder(toBuilder = true) 
+@AllArgsConstructor
 public class TypeCode {
 
-	protected String typeCd;
-    protected String descriptionTxt;
+	@NonNull private String typeCd;
+    private String descriptionTxt;
     
         
 }
