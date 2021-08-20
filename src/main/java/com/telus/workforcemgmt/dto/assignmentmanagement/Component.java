@@ -1,6 +1,8 @@
 
 package com.telus.workforcemgmt.dto.assignmentmanagement;
 
+import java.util.Map;
+
 import lombok.Builder;
 import lombok.Data;
 
@@ -38,7 +40,7 @@ public class Component {
     private Boolean isDoableInd;
     private Integer componentNumber;
     private TeamWorkerSkill[] componentRequiredSkillList;
-    private TypeCode[] componentAttributeList;
-    private TypeCode[] componentDetailList;
-    private TypeCode[] componentRemarkList;
+    private Map<String, String> componentAttributeList;
+    private Map<String, String> componentDetailList;
+    private Map<String, String> componentRemarkList;
 }

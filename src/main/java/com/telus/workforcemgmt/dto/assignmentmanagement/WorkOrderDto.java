@@ -4,6 +4,7 @@ package com.telus.workforcemgmt.dto.assignmentmanagement;
 
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
+import java.util.Map;
 
 import com.telus.workforcemgmt.dto.locationmanagement.CivicAddress;
 
@@ -105,20 +106,18 @@ public class WorkOrderDto  {
 	private Boolean jobReroutedIndicator;
 	private String workOrderStatusCode;
 	private String customerTypeCode;
-	private String serviceIdentificationTypeCode;
-	private String serviceIdentificationTxt;
+	
+	private Map<String, String> serviceIdentification;
 	
 	private CivicAddress workOrderAddress;
-	
 	private String[] preferredTechinicianList;
 	private String[] requiredTechnicianList;
 	private String[] prohibitedTechicianList;
-	
 	private TeamWorkerSkill[] requiredSkillList;
     private Contact[] contactList;
-	private TypeCode[] workOrderRemarkList;
-	private TypeCode[] workOrderAttributeList;
-	private TypeCode[] workOrderDetailList;
-	private Component[] componentList;
+	private Map<String, String> workOrderRemarkList;
+	private Map<String, String> workOrderAttributeList;
+	private Map<String, String> workOrderDetailList;
+	private Map<String, Component> componentList;
 
 }
